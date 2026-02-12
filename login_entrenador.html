@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Entrenador</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function validarClave() {
+      const clave = document.getElementById("clave").value;
+      if (clave === "Dragones123") {
+        window.location.href = "main.html";
+      } else {
+        alert("Clave incorrecta. Intenta de nuevo.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Acceso Entrenador</h2>
+  <label for="clave">Ingrese la clave:</label>
+  <input type="password" id="clave" name="clave">
+  <button onclick="validarClave()">Entrar</button>
+</body>
+</html>
