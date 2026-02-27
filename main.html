@@ -10,13 +10,20 @@
   
   <nav>
     <a href="jugador_semana.html">Jugador de la Semana</a> |
-    <a href="estudiantes.html">Estudiantes</a> |
-    <a href="entrenadores.html">Entrenadores</a>
+    <a href="estudiantes.html">Partidos</a> |
+    <a id="btnEntrenadores" href="entrenadores.html">Publicar</a>
   </nav>
   
   <section>
     <h2>Noticias Recientes</h2>
     <p>Aquí puedes poner las últimas novedades deportivas.</p>
   </section>
+  <script>
+    var perfil= localStorage.getItem("perfil");
+
+    if (perfil === "entrenador"){
+      document.getElementById("btnEntrenadores").style.display = "inline";
+    }
+  </script>
 </body>
 </html>

@@ -1,9 +1,11 @@
+<!--  -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Login Entrenador</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilodlogin.css">
   <script>
     function validarClave() {
       const clave = document.getElementById("clave").value;
@@ -13,6 +15,7 @@
         alert("Clave incorrecta. Intenta de nuevo.");
       }
     }
+    localStorage.setItem("perfil", "entrenador");
   </script>
 </head>
 <body>

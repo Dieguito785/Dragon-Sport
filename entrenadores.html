@@ -2,19 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sección Entrenadores</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Zona de Entrenadores</title>
 </head>
 <body>
-  <h2>Zona de Entrenadores</h2>
-  <p>Publica noticias para los estudiantes:</p>
-  
-  <textarea rows="5" cols="40" placeholder="Escribe tu noticia aquí..."></textarea><br><br>
-  <input type="file" accept="image/*"><br><br>
-  <button>Publicar</button>
-  
-  <p>Controla el Jugador de la Semana desde aquí.</p>
-  
-  <a href="main.html">Volver a Principal</a>
+  <h1>Zona de Entrenadores</h1>
+
+  <h2>Publicar Noticia</h2>
+  <textarea id="texto-noticia" placeholder="Escribe una noticia..."></textarea><br>
+  <button onclick="guardarNoticia()">Publicar</button>
+
+  <h2>Postular Jugador de la Semana</h2>
+  <input type="text" id="nombre-jugador" placeholder="Nombre del jugador"><br>
+  <button onclick="guardarJugador()">Postular</button>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    localStorage.setItem("noticias"); //almacen
+    console.log(localStorage.getItem("noticias"));
+  </script>
 </body>
 </html>

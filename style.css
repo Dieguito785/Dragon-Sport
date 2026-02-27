@@ -4,6 +4,10 @@ body {
   background-color: #f4f4f4;
 }
 
+#btnEntrenadores {
+  display: none; 
+}
+
 h1, h2 {
   color: #b22222;
 }
